@@ -17,22 +17,16 @@
     <header class="header">
         <nav class="navigation">
             <a class="logo" href="/">
-                WebStudio
+                Web<span class="logo-studio list">Studio</span>
             </a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Студия</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Портфолио</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Контакты</a>
-                </li>
+            <ul class="nav-menu list">
+                <li><a class="nav-link" href="index.html">Студия</a></li>
+                <li><a class="nav-link current" href="portfolio.html">Портфолио</a></li>
+                <li><a class="nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
-        <address class="address">
-            <ul>
+        <address>
+            <ul class="address list">
                 <li>
                     <a class="studio-mail" href="mailto:info@example.com">info@example.com</a>
                 </li>
@@ -44,14 +38,16 @@
     </header>
     <main>
          <!-- portfolio -->
-            <h1 hidden>портфолио студии</h1>
-            <button class="portfolio-button" type="button">Все</button>
-            <button class="portfolio-button" type="button">Веб-сайты</button>
-            <button class="portfolio-button" type="button">Приложения</button>
-            <button class="portfolio-button" type="button">Дизайн</button>
-            <button class="portfolio-button" type="button">Маркетинг</button>
+            <h1 hidden>портфолио студии</h1>    
+            <ul class="button list">
+                <li><button class="button primary" type="button">Все</button></li>
+                <li><button class="button secondary" type="button">Веб-сайты</button></li>
+                <li><button class="button secondary" type="button">Приложения</button></li>
+                <li><button class="button secondary" type="button">Дизайн</button></li>
+                <li><button class="button secondary" type="button">Маркетинг</button></li>
+            </ul>
         <section>
-            <ul class="portfolio-list">
+            <ul class="portfolio-list list">
                 <li class="portfolio-item">  
                     <img src="./images/portfolio-img/img-1.jpg" alt="ноутбук с открытой веб-страницей" width="370" height="294">
                     <h2 class="portfolio-item-title">Технокряк</h2>
@@ -104,10 +100,10 @@
     <!-- Подвал -->
     <footer>
         <a class="logo" href="/">
-            WebStudio
+            Web<span class="logo-studio list">Studio</span>
         </a>
-            <address class="address">
-                <ul>
+            <address>
+                <ul class="address list">
                     <li>
                     <a class="studio-address" href="https://goo.gl/maps/x4nBV2eikP3uwNPG8" target="_blank">г. Киев, пр-т
                         Леси Украинки, 26</a>
