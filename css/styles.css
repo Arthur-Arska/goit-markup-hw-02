@@ -1,113 +1,117 @@
-/*========== переменная ==========*/
-:root {
-  --accent-color: #2196f3;
-  --main-font: "Roboto", sans-serif;
-  --second-font: "Raleway", sans-serif;
-  --primary-white-color: #fff;
-  --primary-blue-color: #2196f3;
-  --primary-black-color: #212121;
-}
-
 body {
-  background-color: var(--primary-white-color);
-  color: #757575;
-  font-family: var(--main-font);
+  scroll-behavior: smooth;
 }
 
-.list {
-  list-style: none;
+ul {
+  list-style-type: none;
 }
 
-/*========== header ==========*/
+.logo-studio-black {
+  color: black;
+}
+
+.logo-studio-white {
+  color: white;
+}
+
+.logo,
+.nav-list-link,
+.studio-mail,
+.studio-tel,
+.studio-address,
+.footer-address,
+.footer-mail,
+.footer-tel {
+  text-decoration: none;
+}
 
 .logo {
-  font-family: var(--second-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-
-.logo-studio {
-  color: black;
+.nav-menu .nav-list-link.current {
+  color: #2196f3;
 }
-
-.nav-menu .nav-link.current {
-  color: var(--accent-color);
-}
-
-.nav-link {
+.nav-list-link {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: #212121;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.studio-phone:hover,
-.studio-phone:focus,
+.nav-list-link:hover,
+.nav-list-link:focus,
 .studio-mail:hover,
 .studio-mail:focus,
-.portfolio-button:hover,
-.portfolio-button:focus {
-  color: var(--accent-color);
+.studio-tel:hover,
+.studio-tel:focus {
+  color: #2196f3;
 }
 
-.studio-phone,
-.studio-mail {
+.address {
+  font-style: normal;
+}
+
+.studio-mail,
+.studio-tel {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
-/*========== hero ==========*/
-.hero {
-  background-color: #2f303a;
-}
-
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  color: #ffffff;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--primary-blue-color);
-}
-
-.button.secondary {
-  color: var(--primary-black-color);
-  background-color: var(--primary-white-color);
-}
-
-.modal-button {
+.main-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  background: #2196f3;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
 }
 
-/*========== features ==========*/
+/* ========== HERO ==========*/
+.hero {
+  background: #2f303a;
+}
+
+.hero-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* ========== FEATURES ==========*/
+
 .feauture-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 
 .feauture-description {
+  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -115,61 +119,104 @@ body {
   color: #757575;
 }
 
-/*========== what are we doing ==========*/
+/* ========== ABOUT PIC ==========*/
+
 .gallery-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166;
+  line-height: 1.167;
   letter-spacing: 0.03em;
+
   color: #212121;
 }
 
-/*========== our team ==========*/
+/* ========== OUR TEAM ==========*/
+
 .team-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 166;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
 .team-member {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.187;
+  line-height: 1.188;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
 .member-post {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.187;
+  line-height: 1.188;
   letter-spacing: 0.03em;
-
   color: #757575;
 }
-/*========== footer ==========*/
-.studio-address {
+
+/* ========== FOOTER ==========*/
+
+.footer-address {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: #ffffff;
 }
 
-/*========== portfolio.html ==========*/
+.footer-mail,
+.footer-tel {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
 
-.portfolio-button {
+footer {
+  background: #2f303a;
+}
+
+/* ========== PORTFOLIO ==========*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
 .portfolio-item-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -178,6 +225,7 @@ body {
 }
 
 .portfolio-item-type {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
